@@ -1,0 +1,45 @@
+@import "variables.scss";
+@import "style.css";  //import style.css
+
+/* -- Box model ------------------------------- */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* -- Demo style ------------------------------- */
+html, body {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+
+code {
+  font-family: $code_ff;
+}
+
+//App.js container class
+.container {
+  background-color:$containerColor;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 10px;
+}
+
+//@mixins 
+@mixin Title {
+ font-size: 15px; 
+}
+
+//@include mixin here
+.headerTitle{
+  @include Title;
+font-style: italic;
+}
+
+.header__btn{
+  color:black;
+}

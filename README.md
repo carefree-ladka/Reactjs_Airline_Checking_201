@@ -1,4 +1,4 @@
-# Reactjs_Ariline_Checking_201
+# Reactjs_Airline_Checking_201
 login as
 username: admin
 password:admin or
